@@ -1,0 +1,34 @@
+Dumistracel Eduard-Costin
+
+comenzi:
+
+1.POST:
+localhost:8084/do-math
+
+body (ne-ai spus ca putem face body)
+
+[
+    {
+      "variables": [101,22],
+      "operator": "div"
+    },
+    {
+      "variables": [51,-41],
+      "operator": "sum"
+    },
+    {
+      "variables": [10.2,2.2],
+      "operator": "pow"
+    },
+    {
+      "variables": [-100,10],
+      "operator": "dif"
+    }
+]
+
+2.GET
+localhost:8084/result/save_data
+
+3.GET
+localhost:8084/check-finished/save_data
+->trebuie sters folderul in caz ca rulam a doua oara POST

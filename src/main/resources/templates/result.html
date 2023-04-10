@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title th:text="Result"> </title>
+</head>
+<body>
+<ul>
+    <li th:each="calculator: ${calculators}">
+        <span th:text ="${calculator.operator}"></span>
+        <span>(</span>
+        <span th:text ="${calculator.variables[0]}"></span>
+        <span>, </span>
+        <span th:text ="${calculator.variables[1]}"></span>
+        <span>)=</span>
+        <span th:text ="${calculator.result}"></span>
+    </li>
+
+</ul>
+</body>
+</html>
